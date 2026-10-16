@@ -808,45 +808,45 @@
         gap: 24px;
       }
 
-      /* KOTAK PEMBERKATAN NIKAH & RESEPSI DIBUAT TRANSPARAN MEWAH */
-      .event-card {
-        background: rgba(255, 255, 255, 0.25) !important;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        padding: 36px 24px;
-        border-radius: var(--radius-lg);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        text-align: center;
-        border: 1.5px solid rgba(255, 255, 255, 0.5);
-        border-top: 4px solid var(--accent) !important;
-      }
+    /* KOTAK PEMBERKATAN NIKAH & RESEPSI SANGAT TRANSPARAN */
+.event-card {
+  /* Diubah menjadi 0.10 agar transparan sekali dan foto di belakangnya terlihat jelas */
+  background: rgba(255, 255, 255, 0.10) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 36px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 4px solid var(--accent) !important;
+}
 
-      .event-icon {
-        font-size: 2rem;
-        color: var(--accent);
-        margin-bottom: 10px;
-      }
+/* Mengatur warna teks agar tetap kontras dan mudah dibaca di atas foto */
+.event-card h3 {
+  font-size: 1.7rem;
+  color: #0d2331;
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
 
-      .event-card h3 {
-        font-size: 1.7rem;
-        color: var(--primary);
-        margin-bottom: 10px;
-      }
+.event-card p {
+  color: #111827;
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 14px;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
 
-      .event-card p {
-        color: #2b3a4a;
-        font-weight: 600;
-        font-size: 0.92rem;
-        margin-bottom: 14px;
-      }
+.event-card small {
+  color: #0d2331;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 0.88rem;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
 
-      .event-card small {
-        color: var(--primary);
-        font-weight: 700;
-        display: block;
-        margin-bottom: 20px;
-        font-size: 0.88rem;
-      }
 
       .visual-break {
         position: relative;
@@ -1928,7 +1928,7 @@
 
           <!-- KREDIT AKHIRAN BY RAISACANTIK -->
           <div class="footer-credits">
-            Undangan Digital <span>By RaisaCantik</span>
+            Undangan Digital <span>By Raisa Lesiangi Yang Manis dan Cantik</span>
           </div>
         </div>
       </footer>
