@@ -802,43 +802,54 @@
         border: 0;
       }
 
-/* KOTAK JADWAL ACARA HANYA KELIATAN GARIS BENTUK KOTAKNYA SAJA */
-.event-card {
-  background: transparent !important; /* Latar belakang 100% bening/transparan */
-  backdrop-filter: blur(2px); /* Blur sangat tipis agar foto tetap jernih */
-  -webkit-backdrop-filter: blur(2px);
-  padding: 36px 24px;
-  border-radius: var(--radius-lg);
-  border: 1.5px solid rgba(255, 255, 255, 0.8) !important; /* Garis pinggir putih tegas agar bentuk kotak jelas */
-  border-top: 4px solid var(--accent) !important; /* Akses garis emas di bagian atas kotak */
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
+      .event-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
 
-/* Memperjelas tulisan di dalam kotak bening */
-.event-card h3 {
-  font-size: 1.7rem;
-  color: #0d2331;
-  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.9);
-  margin-bottom: 10px;
-}
+      /* KOTAK JADWAL ACARA HANYA KELIATAN GARIS BENTUK KOTAKNYA SAJA (BENING 100%) */
+      .event-card {
+        background: transparent !important;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        padding: 36px 24px;
+        border-radius: var(--radius-lg);
+        border: 1.5px solid rgba(255, 255, 255, 0.8) !important;
+        border-top: 4px solid var(--accent) !important;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
 
-.event-card p {
-  color: #111827;
-  font-weight: 700;
-  font-size: 0.92rem;
-  margin-bottom: 14px;
-  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
-}
+      .event-icon {
+        font-size: 2rem;
+        color: var(--accent);
+        margin-bottom: 10px;
+      }
 
-.event-card small {
-  color: #0d2331;
-  font-weight: 800;
-  display: block;
-  margin-bottom: 20px;
-  font-size: 0.88rem;
-  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
-}
+      .event-card h3 {
+        font-size: 1.7rem;
+        color: var(--primary);
+        margin-bottom: 10px;
+        text-shadow: 0 1px 4px rgba(255, 255, 255, 0.9);
+      }
+
+      .event-card p {
+        color: #111827;
+        font-weight: 700;
+        font-size: 0.92rem;
+        margin-bottom: 14px;
+        text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+      }
+
+      .event-card small {
+        color: var(--primary);
+        font-weight: 800;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 0.88rem;
+        text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+      }
 
       .visual-break {
         position: relative;
@@ -1116,7 +1127,7 @@
         border: 1px solid #a7f3d0;
       }
 
-      /* BACKGROUND DENGAN FOTO JH3_1895.jpg PADA CLOSING FOOTER (RESPONSIF DAN TERANG) */
+      /* BACKGROUND DENGAN FOTO JH3_1895.jpg PADA CLOSING FOOTER */
       .closing-footer {
         position: relative;
         background:
@@ -1513,7 +1524,7 @@
                 class="btn btn-brown btn-open-map"
                 data-title="Resepsi Pernikahan — Kediaman Bpk. Hutson Mooy"
                 data-address="Kediaman Bpk. Hutson Mooy, Kupang, NTT"
-                data-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.2!2d123.738747!3d-10.110975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDA2JzM5LjUiUyAxMjPCsDQ0JzE5LjUiRQ!5e0!3m2!1sid!2sid!4v1700000000000"
+                data-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.2!2d123.738747!3d-10.110975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDA2JzM5LjUiUyAxMjPCsDQ0JzE9LjUiRQ!5e0!3m2!1sid!2sid!4v1700000000000"
                 data-direct="https://maps.google.com/?q=-10.110975,123.738747"
                 style="font-size: 0.8rem; padding: 10px 20px"
               >
@@ -2548,5 +2559,4 @@
     </script>
   </body>
 </html>
-
 
