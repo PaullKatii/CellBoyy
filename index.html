@@ -121,7 +121,7 @@
         transform: translateX(-40px);
       }
       .reveal-right {
-        transform: translateX(40px);
+        transform: translateX(-40px);
       }
       .reveal-scale {
         transform: scale(0.92);
@@ -808,14 +808,17 @@
         gap: 24px;
       }
 
+      /* KOTAK PEMBERKATAN NIKAH & RESEPSI DIBUAT TRANSPARAN MEWAH */
       .event-card {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.25) !important;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         padding: 36px 24px;
         border-radius: var(--radius-lg);
-        box-shadow: var(--shadow-sm);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         text-align: center;
-        border-top: 4px solid var(--accent);
-        backdrop-filter: blur(6px);
+        border: 1.5px solid rgba(255, 255, 255, 0.5);
+        border-top: 4px solid var(--accent) !important;
       }
 
       .event-icon {
@@ -831,17 +834,18 @@
       }
 
       .event-card p {
-        color: var(--text-muted);
+        color: #2b3a4a;
+        font-weight: 600;
         font-size: 0.92rem;
         margin-bottom: 14px;
       }
 
       .event-card small {
-        color: var(--text-dark);
-        font-weight: 500;
+        color: var(--primary);
+        font-weight: 700;
         display: block;
         margin-bottom: 20px;
-        font-size: 0.85rem;
+        font-size: 0.88rem;
       }
 
       .visual-break {
@@ -1128,12 +1132,12 @@
           url("JH3_1895.jpg") center/cover no-repeat !important;
         color: #fff;
         text-align: center;
-        padding: 90px 20px;
+        padding: 90px 20px 40px 20px;
       }
 
       @media (max-width: 576px) {
         .closing-footer {
-          padding: 70px 16px;
+          padding: 70px 16px 30px 16px;
           background-position: center top !important;
         }
       }
@@ -1180,6 +1184,21 @@
         font-family: "Great Vibes", cursive;
         font-size: clamp(2.8rem, 8vw, 4rem);
         color: var(--accent);
+      }
+
+      /* TULISAN CREDITS DI AKHIRAN FOOTER */
+      .footer-credits {
+        margin-top: 45px;
+        font-size: 0.78rem;
+        letter-spacing: 1.5px;
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .footer-credits span {
+        color: #fceea7;
+        font-weight: 700;
       }
 
       .modal {
@@ -1892,14 +1911,12 @@
         </div>
       </section>
 
-      <!-- CLOSING FOOTER DENGAN BACKGROUND JH3_1895.jpg -->
+      <!-- CLOSING FOOTER DENGAN BACKGROUND JH3_1895.jpg & KREDIT BY RAISACANTIK -->
       <footer class="closing-footer">
         <div class="closing-content reveal-up">
           <blockquote class="bible-verse">
-            "Segala sesuatu ditanggung-Nya, percaya segala sesuatu, mengharapkan
-            segala sesuatu, sabar menanggung segala sesuatu. Kasih tidak
-            berkesudahan."
-            <cite>— 1 Korintus 13:7-8 —</cite>
+            "Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia."
+            <cite>— Matius 19:6 —</cite>
           </blockquote>
           <div class="closing-divider"></div>
           <p class="thank-you-text">
@@ -1908,6 +1925,11 @@
             kami.
           </p>
           <div class="closing-names">Boy & Celine</div>
+
+          <!-- KREDIT AKHIRAN BY RAISACANTIK -->
+          <div class="footer-credits">
+            Undangan Digital <span>By RaisaCantik</span>
+          </div>
         </div>
       </footer>
     </main>
@@ -1928,7 +1950,7 @@
         <span class="sub">Mempelai Pria</span>
         <p>
           Anak kedua putra kedua dari pasangan suami istri:<br />
-          <strong>Yermias Y. Foeh</strong><br />&<br /><strong
+          <strong>Yermias Yerry Foeh S.ip</strong><br />&<br /><strong
             >Yohana Loudue</strong
           >
         </p>
@@ -1946,13 +1968,13 @@
         >
           ×
         </button>
-        <img src="JH3_2194.jpg" alt="Celine Priskila Mooy" />
+        <img src="JH3_2157.jpg" alt="Celine Priskila Mooy" />
         <h3>Celine Priskila Mooy</h3>
         <span class="sub">Mempelai Wanita</span>
         <p>
           Anak pertama putri pertama dari pasangan suami istri:<br />
-          <strong>Hutson M. Mooy</strong><br />&<br /><strong
-            >Yenny M. Dimu</strong
+          <strong>Hutson Melkior Mooy</strong><br />&<br /><strong
+            >Yenny Mariana Dimu</strong
           >
         </p>
       </div>
@@ -2534,4 +2556,5 @@
     </script>
   </body>
 </html>
+
 
