@@ -802,31 +802,24 @@
         border: 0;
       }
 
-      .event-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-      }
-
-    /* KOTAK PEMBERKATAN NIKAH & RESEPSI SANGAT TRANSPARAN */
+/* KOTAK JADWAL ACARA HANYA KELIATAN GARIS BENTUK KOTAKNYA SAJA */
 .event-card {
-  /* Diubah menjadi 0.10 agar transparan sekali dan foto di belakangnya terlihat jelas */
-  background: rgba(255, 255, 255, 0.10) !important;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: transparent !important; /* Latar belakang 100% bening/transparan */
+  backdrop-filter: blur(2px); /* Blur sangat tipis agar foto tetap jernih */
+  -webkit-backdrop-filter: blur(2px);
   padding: 36px 24px;
   border-radius: var(--radius-lg);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.8) !important; /* Garis pinggir putih tegas agar bentuk kotak jelas */
+  border-top: 4px solid var(--accent) !important; /* Akses garis emas di bagian atas kotak */
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-top: 4px solid var(--accent) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Mengatur warna teks agar tetap kontras dan mudah dibaca di atas foto */
+/* Memperjelas tulisan di dalam kotak bening */
 .event-card h3 {
   font-size: 1.7rem;
   color: #0d2331;
-  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.9);
   margin-bottom: 10px;
 }
 
